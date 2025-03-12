@@ -1,8 +1,8 @@
-
 import React from 'react';
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { Briefcase, GraduationCap, Heart, Star } from "lucide-react";
+import { ArticleList } from '@/components/ArticleList';
 
 const Index = () => {
   return (
@@ -114,6 +114,15 @@ const Index = () => {
               "Great design is not just what it looks like. Great design is how it works, how it makes you feel, and ultimately, how it enhances your life."
             </blockquote>
             <p className="text-sapphire font-medium">— Alex Morgan</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Articles Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <div className="opacity-0 animate-fade-in-up animate-delay-600">
+            <ArticleList />
           </div>
         </div>
       </section>
